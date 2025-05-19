@@ -581,7 +581,7 @@ reptil_acuatico_herbivoro_isla(X) :-
     un_reptil_acuatico(X),
     alimentacion(X, "herbivoro"),
     habitat(X, "isla").
-
+ :- discontiguous reptil_acuatico_herbivoro_isla/1.
 % 92) ¿Cuál es el reptil que es agresivo, oviparo y vive en la montaña?
 % Consulta: ?- reptil_agresivo_oviparo_montana(X).
 reptil_agresivo_oviparo_montana(X) :-
@@ -735,7 +735,7 @@ reptil_carnivoro_solitario_montana(X) :-
     alimentacion(X, "carnivoro"),
     socializacion(X, "solitaria"),
     habitat(X, "montaña").
-
+:- discontiguous reptil_carnivoro_solitario_montana/1.
 % 115) ¿Cuál es el reptil que es nocturno, ovovivíparo y vive en la isla?
 % Consulta: ?- reptil_nocturno_ovoviviparo_isla(X).
 reptil_nocturno_ovoviviparo_isla(X) :-
@@ -791,14 +791,14 @@ reptil_ovoviviparo_nocturno_sabana(X) :-
     reproduccion(X, "ovoviviparo"),
     actividad(X, "nocturno"),
     habitat(X, "sabana").
-
+ :- discontiguous reptil_ovoviviparo_nocturno_sabana/1.
 % 123) ¿Cuál es el reptil que es herbívoro, solitario y vive en la isla?
 % Consulta: ?- reptil_herbivoro_solitario_isla(X).
 reptil_herbivoro_solitario_isla(X) :-
     alimentacion(X, "herbivoro"),
     socializacion(X, "solitaria"),
     habitat(X, "isla").
-
+ :- discontiguous reptil_herbivoro_solitario_isla/1.
 % 124) ¿Cuál es el reptil que es diurno, ovíparo y vive en el pantano?
 % Consulta: ?- reptil_diurno_oviparo_pantano(X).
 reptil_diurno_oviparo_pantano(X) :-
@@ -1075,7 +1075,7 @@ reptil_carnivoro_diurno_playa(X) :-
     alimentacion(X, "carnivoro"),
     actividad(X, "diurno"),
     habitat(X, "playa").
-
+:- discontiguous reptil_carnivoro_diurno_playa/1.
 % 165) ¿Cuál es el reptil que es solitario, nocturno y vive en la sabana?
 % Consulta: ?- reptil_solitario_nocturno_sabana(X).
 reptil_solitario_nocturno_sabana(X) :-
@@ -1130,7 +1130,7 @@ reptil_herbivoro_diurno_playa(X) :-
     alimentacion(X, "herbivoro"),
     actividad(X, "diurno"),
     habitat(X, "playa").
-
+ :- discontiguous reptil_herbivoro_diurno_playa/1.
 % 173) ¿Cuál es el reptil que es ovovivíparo, diurno y vive en la montaña?
 % Consulta: ?- reptil_ovoviviparo_diurno_montana(X).
 reptil_ovoviviparo_diurno_montana(X) :-
@@ -1144,7 +1144,7 @@ reptil_carnivoro_oviparo_playa(X) :-
     alimentacion(X, "carnivoro"),
     reproduccion(X, "oviparo"),
     habitat(X, "playa").
-
+ :- discontiguous reptil_carnivoro_oviparo_playa/1.
 % 175) ¿Cuál es el reptil que es solitario, nocturno y vive en la selva?
 % Consulta: ?- reptil_solitario_nocturno_selva(X).
 reptil_solitario_nocturno_selva(X) :-
@@ -1441,7 +1441,7 @@ reptil_rapido_agresivo_montana(X) :-
     un_reptil_rapido(X),
     temperamento(X, "agresivo"),
     habitat(X, "montaña").
-
+ :- discontiguous reptil_rapido_agresivo_montana/1.
 % 220) ¿Cuál es el reptil que es acuático y tiene defensa de mordedura poderosa?
 % Consulta: ?- reptil_acuatico_mordedura_poderosa(X).
 reptil_acuatico_mordedura_poderosa(X) :-
@@ -1674,7 +1674,347 @@ reptil_ovoviviparo_solitario_sabana(X) :-
     habitat(X, "sabana").
 
 
+% 253) ¿Cuál es el reptil que es rápido, ovovivíparo y vive en la playa?
+% Consulta: ?- reptil_rapido_ovoviviparo_playa(X).
+reptil_rapido_ovoviviparo_playa(X) :-
+    un_reptil_rapido(X),
+    reproduccion(X, "ovoviviparo"),
+    habitat(X, "playa").
 
+% 254) ¿Cuál es el reptil que es acuático, diurno y vive en la montaña?
+% Consulta: ?- reptil_acuatico_diurno_montana(X).
+reptil_acuatico_diurno_montana(X) :-
+    un_reptil_acuatico(X),
+    actividad(X, "diurno"),
+    habitat(X, "montaña").
+
+% 255) ¿Cuál es el reptil que es carnívoro, solitario y vive en la isla?
+% Consulta: ?- reptil_carnivoro_solitario_isla(X).
+reptil_carnivoro_solitario_isla(X) :-
+    alimentacion(X, "carnivoro"),
+    socializacion(X, "solitaria"),
+    habitat(X, "isla").
+
+% 256) ¿Cuál es el reptil que es herbívoro, nocturno y vive en la selva?
+% Consulta: ?- reptil_herbivoro_nocturno_selva(X).
+reptil_herbivoro_nocturno_selva(X) :-
+    alimentacion(X, "herbivoro"),
+    actividad(X, "nocturno"),
+    habitat(X, "selva").
+
+% 257) ¿Cuál es el reptil que es ovíparo, agresivo y vive en la sabana?
+% Consulta: ?- reptil_oviparo_agresivo_sabana(X).
+reptil_oviparo_agresivo_sabana(X) :-
+    reproduccion(X, "oviparo"),
+    temperamento(X, "agresivo"),
+    habitat(X, "sabana").
+
+% 258) ¿Cuál es el reptil que es rápido, diurno y vive en la montaña?
+% Consulta: ?- reptil_rapido_diurno_montana(X).
+reptil_rapido_diurno_montana(X) :-
+    un_reptil_rapido(X),
+    actividad(X, "diurno"),
+    habitat(X, "montaña").
+
+% 259) ¿Cuál es el reptil que es acuático, ovovivíparo y vive en la isla?
+% Consulta: ?- reptil_acuatico_ovoviviparo_isla(X).
+reptil_acuatico_ovoviviparo_isla(X) :-
+    un_reptil_acuatico(X),
+    reproduccion(X, "ovoviviparo"),
+    habitat(X, "isla").
+
+% 260) ¿Cuál es el reptil que es carnívoro, diurno y vive en la sabana?
+% Consulta: ?- reptil_carnivoro_diurno_sabana(X).
+reptil_carnivoro_diurno_sabana(X) :-
+    alimentacion(X, "carnivoro"),
+    actividad(X, "diurno"),
+    habitat(X, "sabana").
+
+% 261) ¿Cuál es el reptil que es herbívoro, solitario y vive en la montaña?
+% Consulta: ?- reptil_herbivoro_solitario_montana(X).
+reptil_herbivoro_solitario_montana(X) :-
+    alimentacion(X, "herbivoro"),
+    socializacion(X, "solitaria"),
+    habitat(X, "montaña").
+
+% 262) ¿Cuál es el reptil que es ovovivíparo, nocturno y vive en la playa?
+% Consulta: ?- reptil_ovoviviparo_nocturno_playa(X).
+reptil_ovoviviparo_nocturno_playa(X) :-
+    reproduccion(X, "ovoviviparo"),
+    actividad(X, "nocturno"),
+    habitat(X, "playa").
+
+% 263) ¿Cuál es el reptil que es rápido, herbívoro y vive en la selva?
+% Consulta: ?- reptil_rapido_herbivoro_selva(X).
+reptil_rapido_herbivoro_selva(X) :-
+    un_reptil_rapido(X),
+    alimentacion(X, "herbivoro"),
+    habitat(X, "selva").
+
+% 264) ¿Cuál es el reptil que es acuático, agresivo y vive en la sabana?
+% Consulta: ?- reptil_acuatico_agresivo_sabana(X).
+reptil_acuatico_agresivo_sabana(X) :-
+    un_reptil_acuatico(X),
+    temperamento(X, "agresivo"),
+    habitat(X, "sabana").
+
+% 265) ¿Cuál es el reptil que es carnívoro, ovíparo y vive en la montaña?
+% Consulta: ?- reptil_carnivoro_oviparo_montana(X).
+reptil_carnivoro_oviparo_montana(X) :-
+    alimentacion(X, "carnivoro"),
+    reproduccion(X, "oviparo"),
+    habitat(X, "montaña").
+
+% 266) ¿Cuál es el reptil que es herbívoro, diurno y vive en la isla?
+% Consulta: ?- reptil_herbivoro_diurno_isla(X).
+reptil_herbivoro_diurno_isla(X) :-
+    alimentacion(X, "herbivoro"),
+    actividad(X, "diurno"),
+    habitat(X, "isla").
+
+% 267) ¿Cuál es el reptil que es ovovivíparo, solitario y vive en la playa?
+% Consulta: ?- reptil_ovoviviparo_solitario_playa(X).
+reptil_ovoviviparo_solitario_playa(X) :-
+    reproduccion(X, "ovoviviparo"),
+    socializacion(X, "solitaria"),
+    habitat(X, "playa").
+
+% 268) ¿Cuál es el reptil que es rápido, carnívoro y vive en la sabana?
+% Consulta: ?- reptil_rapido_carnivoro_sabana(X).
+reptil_rapido_carnivoro_sabana(X) :-
+    un_reptil_rapido(X),
+    alimentacion(X, "carnivoro"),
+    habitat(X, "sabana").
+
+% 269) ¿Cuál es el reptil que es acuático, nocturno y vive en la montaña?
+% Consulta: ?- reptil_acuatico_nocturno_montana(X).
+reptil_acuatico_nocturno_montana(X) :-
+    un_reptil_acuatico(X),
+    actividad(X, "nocturno"),
+    habitat(X, "montaña").
+
+% 270) ¿Cuál es el reptil que es carnívoro, solitario y vive en la playa?
+% Consulta: ?- reptil_carnivoro_solitario_playa(X).
+reptil_carnivoro_solitario_playa(X) :-
+    alimentacion(X, "carnivoro"),
+    socializacion(X, "solitaria"),
+    habitat(X, "playa").
+
+% 271) ¿Cuál es el reptil que es herbívoro, ovíparo y vive en la sabana?
+% Consulta: ?- reptil_herbivoro_oviparo_sabana(X).
+reptil_herbivoro_oviparo_sabana(X) :-
+    alimentacion(X, "herbivoro"),
+    reproduccion(X, "oviparo"),
+    habitat(X, "sabana").
+
+% 272) ¿Cuál es el reptil que es ovovivíparo, diurno y vive en la selva?
+% Consulta: ?- reptil_ovoviviparo_diurno_selva(X).
+reptil_ovoviviparo_diurno_selva(X) :-
+    reproduccion(X, "ovoviviparo"),
+    actividad(X, "diurno"),
+    habitat(X, "selva").
+
+% 273) ¿Cuál es el reptil que es rápido, solitario y vive en la montaña?
+% Consulta: ?- reptil_rapido_solitario_montana(X).
+reptil_rapido_solitario_montana(X) :-
+    un_reptil_rapido(X),
+    socializacion(X, "solitaria"),
+    habitat(X, "montaña").
+
+% 274) ¿Cuál es el reptil que es acuático, herbívoro y vive en la playa?
+% Consulta: ?- reptil_acuatico_herbivoro_playa(X).
+reptil_acuatico_herbivoro_playa(X) :-
+    un_reptil_acuatico(X),
+    alimentacion(X, "herbivoro"),
+    habitat(X, "playa").
+
+% 275) ¿Cuál es el reptil que es carnívoro, diurno y vive en la montaña?
+% Consulta: ?- reptil_carnivoro_diurno_montana(X).
+reptil_carnivoro_diurno_montana(X) :-
+    alimentacion(X, "carnivoro"),
+    actividad(X, "diurno"),
+    habitat(X, "montaña").
+
+% 276) ¿Cuál es el reptil que es herbívoro, solitario y vive en la selva?
+% Consulta: ?- reptil_herbivoro_solitario_selva(X).
+reptil_herbivoro_solitario_selva(X) :-
+    alimentacion(X, "herbivoro"),
+    socializacion(X, "solitaria"),
+    habitat(X, "selva").
+
+% 277) ¿Cuál es el reptil que es ovíparo, nocturno y vive en la playa?
+% Consulta: ?- reptil_oviparo_nocturno_playa(X).
+reptil_oviparo_nocturno_playa(X) :-
+    reproduccion(X, "oviparo"),
+    actividad(X, "nocturno"),
+    habitat(X, "playa").
+
+% 278) ¿Cuál es el reptil que es rápido, agresivo y vive en la sabana?
+% Consulta: ?- reptil_rapido_agresivo_sabana(X).
+reptil_rapido_agresivo_sabana(X) :-
+    un_reptil_rapido(X),
+    temperamento(X, "agresivo"),
+    habitat(X, "sabana").
+
+% 279) ¿Cuál es el reptil que es acuático, ovovivíparo y vive en la montaña?
+% Consulta: ?- reptil_acuatico_ovoviviparo_montana(X).
+reptil_acuatico_ovoviviparo_montana(X) :-
+    un_reptil_acuatico(X),
+    reproduccion(X, "ovoviviparo"),
+    habitat(X, "montaña").
+
+% 280) ¿Cuál es el reptil que es carnívoro, nocturno y vive en la selva?
+% Consulta: ?- reptil_carnivoro_nocturno_selva(X).
+reptil_carnivoro_nocturno_selva(X) :-
+    alimentacion(X, "carnivoro"),
+    actividad(X, "nocturno"),
+    habitat(X, "selva").
+
+% 281) ¿Cuál es el reptil que es herbívoro, diurno y vive en la playa?
+% Consulta: ?- reptil_herbivoro_diurno_playa(X).
+reptil_herbivoro_diurno_playa(X) :-
+    alimentacion(X, "herbivoro"),
+    actividad(X, "diurno"),
+    habitat(X, "playa").
+ :- discontiguous reptil_herbivoro_diurno_playa/1.
+
+% 282) ¿Cuál es el reptil que es ovovivíparo, solitario y vive en la montaña?
+% Consulta: ?- reptil_ovoviviparo_solitario_montana(X).
+reptil_ovoviviparo_solitario_montana(X) :-
+    reproduccion(X, "ovoviviparo"),
+    socializacion(X, "solitaria"),
+    habitat(X, "montaña").
+
+% 283) ¿Cuál es el reptil que es rápido, diurno y vive en la isla?
+% Consulta: ?- reptil_rapido_diurno_isla(X).
+reptil_rapido_diurno_isla(X) :-
+    un_reptil_rapido(X),
+    actividad(X, "diurno"),
+    habitat(X, "isla").
+
+% 284) ¿Cuál es el reptil que es acuático, carnívoro y vive en la sabana?
+% Consulta: ?- reptil_acuatico_carnivoro_sabana(X).
+reptil_acuatico_carnivoro_sabana(X) :-
+    un_reptil_acuatico(X),
+    alimentacion(X, "carnivoro"),
+    habitat(X, "sabana").
+
+% 285) ¿Cuál es el reptil que es herbívoro, ovíparo y vive en la montaña?
+% Consulta: ?- reptil_herbivoro_oviparo_montana(X).
+reptil_herbivoro_oviparo_montana(X) :-
+    alimentacion(X, "herbivoro"),
+    reproduccion(X, "oviparo"),
+    habitat(X, "montaña").
+
+% 286) ¿Cuál es el reptil que es ovovivíparo, diurno y vive en la playa?
+% Consulta: ?- reptil_ovoviviparo_diurno_playa(X).
+reptil_ovoviviparo_diurno_playa(X) :-
+    reproduccion(X, "ovoviviparo"),
+    actividad(X, "diurno"),
+    habitat(X, "playa").
+
+% 287) ¿Cuál es el reptil que es rápido, solitario y vive en la sabana?
+% Consulta: ?- reptil_rapido_solitario_sabana(X).
+reptil_rapido_solitario_sabana(X) :-
+    un_reptil_rapido(X),
+    socializacion(X, "solitaria"),
+    habitat(X, "sabana").
+:- discontiguous reptil_acuatico_herbivoro_montana/1.
+
+% 288) ¿Cuál es el reptil que es acuático, herbívoro y vive en la montaña?
+% Consulta: ?- reptil_acuatico_herbivoro_montana(X).
+reptil_acuatico_herbivoro_montana(X) :-
+    un_reptil_acuatico(X),
+    alimentacion(X, "herbivoro"),
+    habitat(X, "montaña").
+
+% 289) ¿Cuál es el reptil que es carnívoro, diurno y vive en la playa?
+% Consulta: ?- reptil_carnivoro_diurno_playa(X).
+reptil_carnivoro_diurno_playa(X) :-
+    alimentacion(X, "carnivoro"),
+    actividad(X, "diurno"),
+    habitat(X, "playa").
+
+% 290) ¿Cuál es el reptil que es herbívoro, solitario y vive en la isla?
+% Consulta: ?- reptil_herbivoro_solitario_isla(X).
+reptil_herbivoro_solitario_isla(X) :-
+    alimentacion(X, "herbivoro"),
+    socializacion(X, "solitaria"),
+    habitat(X, "isla").
+:- discontiguous reptil_herbivoro_solitario_isla/1.
+% 291) ¿Cuál es el reptil que es ovíparo, nocturno y vive en la sabana?
+% Consulta: ?- reptil_oviparo_nocturno_sabana(X).
+reptil_oviparo_nocturno_sabana(X) :-
+    reproduccion(X, "oviparo"),
+    actividad(X, "nocturno"),
+    habitat(X, "sabana").
+
+% 292) ¿Cuál es el reptil que es rápido, agresivo y vive en la montaña?
+% Consulta: ?- reptil_rapido_agresivo_montana(X).
+reptil_rapido_agresivo_montana(X) :-
+    un_reptil_rapido(X),
+    temperamento(X, "agresivo"),
+    habitat(X, "montaña").
+
+% 293) ¿Cuál es el reptil que es acuático, ovovivíparo y vive en la playa?
+% Consulta: ?- reptil_acuatico_ovoviviparo_playa(X).
+reptil_acuatico_ovoviviparo_playa(X) :-
+    un_reptil_acuatico(X),
+    reproduccion(X, "ovoviviparo"),
+    habitat(X, "playa").
+
+% 294) ¿Cuál es el reptil que es carnívoro, solitario y vive en la montaña?
+% Consulta: ?- reptil_carnivoro_solitario_montana(X).
+reptil_carnivoro_solitario_montana(X) :-
+    alimentacion(X, "carnivoro"),
+    socializacion(X, "solitaria"),
+    habitat(X, "montaña").
+
+% 295) ¿Cuál es el reptil que es herbívoro, diurno y vive en la selva?
+% Consulta: ?- reptil_herbivoro_diurno_selva(X).
+reptil_herbivoro_diurno_selva(X) :-
+    alimentacion(X, "herbivoro"),
+    actividad(X, "diurno"),
+    habitat(X, "selva").
+
+% 296) ¿Cuál es el reptil que es ovovivíparo, nocturno y vive en la sabana?
+% Consulta: ?- reptil_ovoviviparo_nocturno_sabana(X).
+reptil_ovoviviparo_nocturno_sabana(X) :-
+    reproduccion(X, "ovoviviparo"),
+    actividad(X, "nocturno"),
+    habitat(X, "sabana").
+
+% 297) ¿Cuál es el reptil que es rápido, diurno y vive en la playa?
+% Consulta: ?- reptil_rapido_diurno_playa(X).
+reptil_rapido_diurno_playa(X) :-
+    un_reptil_rapido(X),
+    actividad(X, "diurno"),
+    habitat(X, "playa").
+
+% 298) ¿Cuál es el reptil que es acuático, herbívoro y vive en la isla?
+% Consulta: ?- reptil_acuatico_herbivoro_isla(X).
+reptil_acuatico_herbivoro_isla(X) :-
+    un_reptil_acuatico(X),
+    alimentacion(X, "herbivoro"),
+    habitat(X, "isla").
+
+% 299) ¿Cuál es el reptil que es carnívoro, ovíparo y vive en la playa?
+% Consulta: ?- reptil_carnivoro_oviparo_playa(X).
+reptil_carnivoro_oviparo_playa(X) :-
+    alimentacion(X, "carnivoro"),
+    reproduccion(X, "oviparo"),
+    habitat(X, "playa").
+
+% 300) ¿Cuál es el reptil que es herbívoro, solitario y vive en la sabana?
+% Consulta: ?- reptil_herbivoro_solitario_sabana(X).
+reptil_herbivoro_solitario_sabana(X) :-
+    alimentacion(X, "herbivoro"),
+    socializacion(X, "solitaria"),
+    habitat(X, "sabana").
+
+
+
+ 
 consultas_a_verificar([   % a partir de la 222
     reptil_oviparo_diurno_camuflaje_eficaz(X),
     reptil_carnivoro_nocturno_escamas_brillantes(X),
