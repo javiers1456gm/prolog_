@@ -53,6 +53,8 @@ un_reptil_venenoso("serpiente_de_las_colinas").
 un_reptil_venenoso("serpiente_zebra").
 
 un_reptil_rapido("reptil_rapido_agresivo_bosque").
+un_reptil_rapido("gecko_oviparo_selva").
+un_reptil_rapido("lagarto_agresivo_playa").
 un_reptil_rapido("lagarto_sabana_ovoviviparo").
 un_reptil_rapido("lagarto_rapido_carnivoro_montana").
 un_reptil_rapido("reptil_rapido_ovoviviparo_bosque").
@@ -114,6 +116,8 @@ un_reptil_rapido("serpiente_cuerno").
 un_reptil_rapido("lagarto_corredor").
 un_reptil_rapido("serpiente_musculosa").
 un_reptil_acuatico("tortuga_de_madera").
+un_reptil_acuatico("tortuga_solitario_montana").
+un_reptil_acuatico("tortuga_ovipara_sabana").
 un_reptil_acuatico("tortuga_acuatica_herbivora_montana").
 un_reptil_acuatico("cocodrilo_ovoviviparo_pantano").
 un_reptil_acuatico("reptil_acuatico_nocturno_veneno").
@@ -228,6 +232,16 @@ reptil("tortuga_lora","caparazon_semi_circular").
 habitat(reptil_herbivoro_solitario_pantano, "pantano").
 habitat(reptil_oviparo_migrador, "montaña").
 habitat(reptil_solitario_ovoviviparo_selva, "selva").
+habitat("gecko_oviparo_selva", "selva").
+habitat("tortuga_solitario_montana", "montaña").
+habitat("serpiente_carnivora_diurna_isla", "isla").
+habitat("iguana_herbivora_ovovivipara_playa", "playa").
+habitat("tortuga_nocturna_solitario_montana", "montaña").
+habitat("lagarto_agresivo_playa", "playa").
+habitat("tortuga_ovipara_sabana", "sabana").
+habitat("serpiente_carnivora_nocturna_isla", "isla").
+habitat("tortuga_diurna_herbivora_oceano", "oceano").
+habitat("serpiente_ovovivipara_solitario_sabana", "sabana").
 habitat("reptil_solitario_ovoviviparo_selva", "selva").
 habitat("reptil_desertico_cuerpo_grande", "desierto").
 habitat("reptil_acuatico_oviparo_montana", "montaña").
@@ -992,6 +1006,10 @@ reptil("iguanas_de_comunidad", "lagarto", "playa", "herbivoro").
 reptil("serpiente_reina", "serpiente", "selva", "carnivoro").
 reptil("caiman_americano", "cocodrilo", "río", "carnivoro").
 alimentacion("iguana", "herbivoro").
+alimentacion("iguana_herbivora_ovovivipara_playa", "herbivoro").
+alimentacion("tortuga_diurna_herbivora_oceano", "herbivoro").
+alimentacion("serpiente_carnivora_diurna_isla", "carnivoro").
+alimentacion("serpiente_carnivora_nocturna_isla", "carnivoro").
 alimentacion("tortuga_acuatica_herbivora_montana", "herbivoro").
 alimentacion("lagarto_rapido_carnivoro_montana", "carnivoro").
 alimentacion("iguana_nocturna_herbivora_playa", "herbivoro").
@@ -1747,6 +1765,10 @@ reproduccion("serpiente_verde_esmeralda", "oviparo").
 reproduccion("tortuga_leopardo", "oviparo").
 reproduccion("dragón_de_komodo", "oviparo").
 reproduccion("caiman_negro", "oviparo").
+reproduccion("gecko_oviparo_selva", "oviparo").
+reproduccion("iguana_herbivora_ovovivipara_playa", "ovoviviparo").
+reproduccion("tortuga_ovipara_sabana", "oviparo").
+reproduccion("serpiente_ovovivipara_solitario_sabana", "ovoviviparo").
 reproduccion("serpiente_mamba_negra", "oviparo").
 reproduccion("tortuga_de_la_isla_pinta", "oviparo").
 reproduccion("camaleon_pantera", "oviparo").
@@ -1851,6 +1873,8 @@ reproduccion("serpiente_cascabel", "oviparo", "praderas_abiertas").
 reproduccion("iguana_de_cuernos", "oviparo", "junglas_de_niebla").
 socializacion(reptil_herbivoro_solitario_pantano, "solitaria").
 socializacion(reptil_solitario_ovoviviparo_selva, "solitaria").
+socializacion("tortuga_solitario_montana", "solitaria").
+socializacion("serpiente_ovovivipara_solitario_sabana", "solitaria").
 socializacion("serpiente_solitaria_ovovivipara_playa", "solitaria").
 socializacion("serpiente_cobra_reina", "solitaria").
 socializacion("reptil_solitario_ovoviviparo_rio", "solitaria").
@@ -2571,6 +2595,10 @@ toxicidad("iguanas_de_comunidad", "no_toxico").
 toxicidad("serpiente_reina", "toxico").
 toxicidad("caiman_americano", "no_toxico").
 actividad("reptil_camuflaje_eficaz", "diurno").
+actividad("serpiente_carnivora_diurna_isla", "diurno").
+actividad("tortuga_diurna_herbivora_oceano", "diurno").
+actividad("serpiente_carnivora_nocturna_isla", "nocturno").
+actividad("tortuga_nocturna_solitario_montana", "nocturno").
 actividad("serpiente_venenosa_diurna_montana", "diurno").
 actividad("iguana_nocturna_herbivora_playa", "nocturno").
 actividad(reptil_brillante_nocturno, "nocturno").
@@ -2805,6 +2833,7 @@ actividad("iguanas_de_comunidad", "diurno").
 actividad("serpiente_reina", "nocturno").
 actividad("caiman_americano", "diurno").
 temperamento("iguana", "neutral").
+temperamento("lagarto_agresivo_playa", "agresivo").
 temperamento(reptil_espinas_agresivo, "agresivo").
 temperamento("reptil_espinas_agresivo", "agresivo").
 temperamento("reptil_nocturno_agresivo_montana", "agresivo").
