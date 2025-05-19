@@ -1,9 +1,9 @@
 cargar hechos:
-[ 'C:/Users/javie/Downloads/prolog/hechosCompletos.pl' ].
+[ 'C:/Users/javie/Downloads/prolog/prolog_/hechosCompletos.pl' ].
 
 
 cargar Clausulas .pl
- [ 'C:/Users/javie/Downloads/prolog/clausulas.pl' ].
+ [ 'C:/Users/javie/Downloads/prolog/prolog_/hechosCompletos.pl' ].
 
  Busqueda:
 Reptil(lagarto, verde)
@@ -16,4 +16,4 @@ reptil(X, venenosa).
 
 Para consultas abiertas usar 
 
-";" para mostrar mas resultados 
+";" para mostrar mas resultados
