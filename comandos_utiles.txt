@@ -1,0 +1,19 @@
+cargar hechos:
+[ 'C:/Users/javie/Downloads/prolog/hechosCompletos.pl' ].
+
+
+cargar Clausulas .pl
+ [ 'C:/Users/javie/Downloads/prolog/clausulas.pl' ].
+
+ Busqueda:
+Reptil(lagarto, verde)
+
+busqueda
+reptil(lagarto, X).
+
+Busqueda con algun parametro:
+reptil(X, venenosa).
+
+Para consultas abiertas usar 
+
+";" para mostrar mas resultados 
