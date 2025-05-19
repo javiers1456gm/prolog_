@@ -1,6 +1,5 @@
 cargar hechos:
-[ 'C:/Users/javie/Downloads/prolog/prolog_/hechosCompletos.pl' ].
-
+ [ 'C:/Users/javie/Downloads/prolog/prolog_/clausulas.pl' ].
 
 cargar Clausulas .pl
  [ 'C:/Users/javie/Downloads/prolog/prolog_/hechosCompletos.pl' ].

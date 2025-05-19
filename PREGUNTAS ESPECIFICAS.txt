@@ -1,0 +1,344 @@
+PREGUNTAS ESPECIFICAS  PARA PROYECTO
+ 1. ¿Qué reptil se especializa en la caza de insectos? 
+alimentacion(Reptil, "insectivoro").
+ 2.¿Qué reptil caza roedores como fuente de alimento? 
+alimentacion(Reptil, "roedores").
+ 3.¿Qué reptil captura anfibios como parte de su dieta? 
+alimentacion(Reptil, "anfibios").
+ 4.¿Qué reptil caza en el agua? 
+alimentacion(Reptil, "peces").
+ 5.¿Qué reptil posee visión nocturna avanzada?
+ adaptacionambiental(Reptil, "vision_nocturna", Entorno).
+ 6.¿Qué reptil puede correr sobre el agua?
+ reptil(Reptil, "corre_sobre_agua").
+ 7.¿Qué reptil es ovíparo?
+ reproduccion(Reptil, "oviparo", Lugar).
+ 8.¿Qué reptil es ovovivíparo?
+ reproduccion(Reptil, "ovoviviparo", Lugar).
+ 9.¿Qué reptil pone huevos pequeños en su nido?
+ ciclo_reproductivo(Reptil, "oviparo", "bosque_tropical", _, _, "huevos_pequenos").
+ 10.¿Qué reptil realiza migraciones estacionales? 
+migracion(Reptil, "estacional", _).
+ 11.¿Qué reptil expulsa sangre como mecanismo de defensa? 
+reptil(Reptil, "expulsa_sangre").
+ 12.¿Qué reptil tiene un ciclo de vida de más de 50 años? 
+ciclo_vida(Reptil, Ciclo), Ciclo > 50.
+ 13.¿Qué reptil tiene un ciclo reproductivo ovíparo en el bosque tropical, con temperatura controlada, en época lluviosa y
+ con huevos pequeños? ciclo_reproductivo(Reptil, "oviparo", "bosque_tropical", "temperatura_controlada",
+ "epoca_lluviosa", "huevos_pequenos").
+ 14.¿Qué reptil realizan migraciones estacionales? 
+migracion(Reptil, "estacional", _).
+ 15.¿Qué reptiles migran hacia otros ríos? 
+migracion(Reptil, _, "rios").
+ 16.¿Qué reptil carece de párpados?
+ reptil(Reptil, "no_parpados").
+ 15.¿Qué reptil expande su capucha cuando se siente amenazado?
+ reptil(Reptil, "expande_capucha").
+ 16.¿Qué reptil posee una mandíbula poderosa?
+ reptil(Reptil, "mandibula_poderosa").
+17.¿Qué reptil tiene un ciclo reproductivo ovíparo en la playa, con alta temperatura, en periodo estacional y con huevos
+ grandes?
+ ciclo_reproductivo(Reptil, "oviparo", "playa", "alta_temperatura", "periodo_estacional", "huevos_grandes").
+ 18.¿Qué reptil tiene un ciclo reproductivo ovíparo en el bosque tropical, con temperatura controlada, en época lluviosa y
+ con huevos pequeños?
+ ciclo_reproductivo(Reptil, "oviparo", "bosque_tropical", "temperatura_controlada", "epoca_lluviosa",
+ "huevos_pequenos").
+ 19.¿Qué reptil posee un ciclo reproductivo ovovivíparo en agua fresca, con temperatura ideal, en época cálida y con
+ nido en mangle?
+ ciclo_reproductivo(Reptil, "ovoviviparo", "agua_fresca", "temperatura_ideal", "epoca_calida", "nido_en_mangle").
+ 20.¿Qué reptile es rápido y vive en ambientes acuáticos?
+ un_reptil_rapido(Reptil), un_reptil_acuatico(Reptil).
+ 21.¿Qué reptil caza en agua salobre?
+ comportamiento(Reptil, "caza_en_agua_salobre").
+ 22.¿Qué reptil estrangula a sus presas?
+ comportamiento(Reptil, "estrangula_a_sus_presas").
+ 23.¿Qué reptil ataca su presa con veneno?
+ comportamiento(Reptil, "ataca_su_presa_con_su_veneno").
+ 24.¿Qué reptil excava huecos para protegerse?
+ comportamiento(Reptil, "excava_huecos_para_protegerse").
+ 25.¿Qué reptil se esconde en grietas de rocas?
+ comportamiento(Reptil, "se_esconde_en_grietas_de_rocas").
+ 26.¿Qué reptil toma el sol para activar su metabolismo?
+ comportamiento(Reptil, "toma_el_solpara_activar_su_metabolismo").
+ 27.¿Qué reptil se esconde bajo rocas?
+ comportamiento(Reptil, "se_esconde_bajo_rocas").
+ 28.¿Qué reptil se queda en alturas inaccesibles?
+ comportamiento(Reptil, "se_queda_en_alturas_inaccesibles").
+ 29.¿Qué reptil nada en aguas profundas?
+ comportamiento(Reptil, "nada_en_aguas_profundas").
+ 30.¿Qué reptil se oculta en la matorral?
+ comportamiento(Reptil, "se_oculta_en_la_matorral").
+ 31.¿Qué reptil se desliza por aguas tranquilas?
+ comportamiento(Reptil, "se_desliza_por_aguas_tranquilas").
+ 32.¿Qué reptil acecha presas en las orillas?
+ comportamiento(Reptil, "acecha_sus_presas_en_las_orillas").
+ 33.¿Qué reptil excava y escala rocas?
+ comportamiento(Reptil, "excava_y_escala_rocas").
+34.¿Qué reptil se oculta bajo hojas?
+ comportamiento(Reptil, "se_oculta_bajo_hojas").
+ 35.¿Qué reptil suele descansar sobre rocas en la orilla?
+ comportamiento(Reptil, "suele descansar sobre rocas en la orilla").
+ 36.¿Qué reptil realiza migraciones estacionales?
+ migracion(Reptil, "estacional", _).
+ 37.¿Qué reptil migra de forma bidireccional?
+ migracion(Reptil, "bidireccional", _).
+ 38.¿Qué reptil realiza migraciones altitudinales?
+ migracion(Reptil, "altitudinal", _).
+ 39.¿Qué reptil migra de manera anual?
+ migracion(Reptil, "anual", _).
+ 40.¿Qué reptil tiene una migración irregular?
+ migracion(Reptil, "irregular", _).
+ 41.¿Qué reptil realiza una migración unidireccional?
+ migracion(Reptil, "unidireccional", _).
+ 42.¿Qué reptil migra como forma de escape?
+ migracion(Reptil, "de_escape", _).
+ 43.¿Qué reptil realiza migraciones multigeneracionales?
+ migracion(Reptil, "multigeneracional", _).
+ 44.Qué reptil migra hacia playas?
+ migracion(Reptil, _, "playas").
+ 45.¿Qué reptil migra hacia pantanos?
+ migracion(Reptil, _, "pantano").
+ 46.¿Qué reptil migra hacia rocas?
+ migracion(Reptil, _, "rocas").
+ 47.¿Qué reptil migra hacia selvas?
+ migracion(Reptil, _, "selvas").
+ 48.¿Qué reptil migra hacia costas?
+ migracion(Reptil, _, "costas").
+ 50.¿Qué reptil migra hacia ríos?
+ migracion(Reptil, _, "rios").
+ 51¿Qué reptil migra hacia praderas?
+ migracion(Reptil, _, "praderas").
+ 52¿Qué reptil migra hacia océanos?
+ migracion(Reptil, _, "oceanos").
+ 53¿Qué reptil migra hacia manglares?
+ migracion(Reptil, _, "manglares").
+54.¿Qué reptil migra hacia montañas?
+ migracion(Reptil, _, "montanas").
+ 55¿Qué reptil migra hacia islotes?
+ migracion(Reptil, _, "islotes").
+ 56¿Qué reptil realiza migraciones facultativas?
+ migracion(Reptil, "facultativa", _).
+ 57.¿Qué reptil se reproduce en la selva?
+ reproduccion(Reptil, _, "selva").
+ 58.¿Qué reptil se reproduce en rocas?
+ reproduccion(Reptil, _, "rocas").
+ 59.¿Qué reptil se reproduce en el desierto?
+ reproduccion(Reptil, _, "desierto").
+ 60.¿Qué reptil se reproduce en bosques?
+ reproduccion(Reptil, _, "bosques").
+ 61.¿Qué reptil se reproduce en sabanas?
+ reproduccion(Reptil, _, "sabanas").
+ 62.¿Qué reptil se reproduce en lagos?
+ reproduccion(Reptil, _, "lagos").
+ 63.¿Qué reptil se reproduce en costas?
+ reproduccion(Reptil, _, "costas").
+ 64.¿Qué reptil se reproduce en la jungla?
+ reproduccion(Reptil, _, "junglas").
+ 65.¿Qué reptil se reproduce en praderas?
+ reproduccion(Reptil, _, "pradera").
+ 66.¿Qué reptil se reproduce en islotes?
+ reproduccion(Reptil, _, "islotes").
+ 67.¿Qué reptil se reproduce en pantanos?
+ reproduccion(Reptil, _, "pantano").
+ 68.¿Qué reptil se reproduce en lagunas?
+ reproduccion(Reptil, _, "lagunas").
+ 69.¿Qué reptil se reproduce en alta montaña?
+ reproduccion(Reptil, _, "alta_montana").
+ 70.¿Qué reptil se reproduce en ríos?
+ reproduccion(Reptil, _, "rios").
+ 78.¿Qué reptil se reproduce en zonas rocosas?
+ reproduccion(Reptil, _, "zonas_rocosas").
+ 79.¿Qué reptil tiene alas de piel?
+ reptil(Reptil, "alas_de_piel").
+80.¿Qué reptil se oculta bien?
+ reptil(Reptil, "se_oculta_bien").
+ 81.¿Qué reptil brilla con un tono metálico?
+ reptil(Reptil, "brillo_metalico").
+ 82.¿Qué reptil planea entre los árboles?
+ reptil(Reptil, "planea_entre_arboles").
+ 83.¿Qué reptil habita océanos?
+ reptil(Reptil, "habita_oceanos").
+ 84.¿Qué reptil cierra completamente su caparazón?
+ reptil(Reptil, "cierra_caparazon").
+ 85.¿Qué reptil tiene sonido fuerte?
+ reptil(Reptil, "sonido_fuerte").
+ 86.¿Qué reptil es considerado el más largo?
+ reptil(Reptil, "mas_larga").
+ 87.¿Qué reptil es colosal?
+ reptil(Reptil, "colosal").
+ 88.¿Qué reptil es considerado gigante?
+ reptil(Reptil, "gigante").
+ 89.¿Qué reptil tiene patas gruesas?
+ reptil(Reptil, "patas_gruesas").
+ 90.¿Qué reptil tiene nariz curva?
+ reptil(Reptil, "nariz_curva").
+ 91¿Qué reptil tiene caparazón grueso como adaptación?
+ adaptacionambiental(Reptil, "caparazon_grueso", _).
+ 92¿Qué reptil tiene escudo protector?
+ adaptacionambiental(Reptil, "escudo_protector", _).
+ 93¿Qué reptil posee gran tamaño como adaptación?
+ adaptacionambiental(Reptil, "gran_tamano", _).
+ 94¿Qué reptil resiste temperaturas extremas?
+ adaptacionambiental(Reptil, "resistencia_a_temperaturas_extremas", _).
+ 95¿Qué reptil cambia de color en áreas desérticas?
+ adaptacionambiental(Reptil, "cambio_de_color", "areas_deserticas").
+ 96¿Qué reptil tiene rápida adaptación al entorno?
+ adaptacionambiental(Reptil, "rapida_adaptacion_al_entorno", _).
+ 98¿Qué reptil se camufla en terrenos áridos?
+ adaptacionambiental(Reptil, "camuflaje", "terrenos_aridos").
+ 99¿Qué reptil resiste el calor del desierto?
+ adaptacionambiental(Reptil, "resistencia_al_calor", "arenas_calidas").
+100¿Qué reptil tiene veneno para cazar?
+ adaptacionambiental(Reptil, "veneno_para_caza", _).
+ 101¿Qué reptil tiene piel escamosa como defensa?
+ adaptacionambiental(Reptil, "piel_escamosa", _).
+ 102.Qué reptil detecta vibraciones?
+ adaptacionambiental(Reptil, "vibraciones_detectables", _).
+ 103¿Qué reptil se camufla en la arena?
+ adaptacionambiental(Reptil, "camuflaje_en_la_arena", _).
+ 104.¿Qué reptil puede respirar bajo el agua?
+ adaptacionambiental(Reptil, "respiracion_subacuatica", _).
+ 105.¿Qué reptil hiberna en bosques húmedos?
+ adaptacionambiental(Reptil, "hibernacion_invernal", "bosques_humedos").
+ 106.¿Qué reptil tiene coloración adaptativa?
+ adaptacionambiental(Reptil, "coloracion_adaptativa", _).
+ 107.¿Qué reptil tiene cuerpo robusto para sobrevivir en islas rocosas?
+ adaptacionambiental(Reptil, "cuerpo_robusto", "islas_rocosas").
+ 108.¿Qué reptil tiene caparazón blando para nadar en el mar abierto?
+ adaptacionambiental(Reptil, "caparazon_grueso", "mar_abierto").
+ 109.¿Qué reptil tiene escamas duras para sobrevivir en zonas rocosas?
+ adaptacionambiental(Reptil, "escamas_duras", "zonas_rocosas").
+ 110.¿Qué reptil vive en la isla Natuna?
+ vive_en(Reptil, "isla_natuna", _, _).
+ 111.¿Qué reptil habita la selva tropical?
+ vive_en(Reptil, "selva_tropical", _, _).
+ 112.¿Qué reptil vive en la estepa mongola?
+ vive_en(Reptil, "estepa_mongola", _, _).
+ 113.¿Qué reptil vive en la playa ámbar?
+ vive_en(Reptil, "playa_ambar", _, _).
+ 114.¿Qué reptil habita la cordillera andina?
+ vive_en(Reptil, "cordillera_andina", _, _).
+ 115.¿Qué reptil ovíparo se reproduce en la playa?
+ ciclo_reproductivo(Reptil, "oviparo", "playa", _, _, _).
+ 116.¿Qué reptil ovíparo se reproduce en el bosque tropical?
+ ciclo_reproductivo(Reptil, "oviparo", "bosque_tropical", _, _, _).
+ 117¿Qué reptil ovovivíparo se reproduce en ríos?
+ ciclo_reproductivo(Reptil, "ovoviviparo", "rios", _, _, _).
+ 118.¿Qué reptil ovíparo pone sus huevos en sabanas?
+ ciclo_reproductivo(Reptil, "oviparo", "sabanas", _, _, _).
+119.¿Qué reptil interactúa con un zorro del desierto?
+ interactua_con(Reptil, _, "zorro_del_desierto", _, _).
+ 120.¿Qué reptil interactúa con un lobo pintado?
+ interactua_con(Reptil, _, "lobo_pintado", _, _).
+ 121.¿Qué reptil interactúa con un koala blanco?
+ interactua_con(Reptil, _, "koala_blanco", _, _).
+ 122.¿Qué reptil interactúa con un mono plateado?
+ interactua_con(Reptil, _, "mono_plateado", _, _).
+ 123.¿Qué reptil interactúa con un oso fantasma?
+ interactua_con(Reptil, _, "oso_fantasma", _, _).
+ 124.¿Qué reptil ovíparo pone huevos bajos en arbustos?
+ ciclo_reproductivo(Reptil, "oviparo", "arbustos", _, _, "huevos_bajos").
+ 125.¿Qué reptil ovíparo pone huevos ocultos en rocas del desierto?
+ ciclo_reproductivo(Reptil, "oviparo", "desierto", _, _, "huevos_ocultos").
+ 126.¿Qué reptil ovíparo pone huevos en montañas?
+ ciclo_reproductivo(Reptil, "oviparo", "montanas", _, _, _).
+ 127.¿Qué reptil tiene un caparazón grande y rugoso?
+ caracteristica(Reptil, "caparazon_grande_y_rugoso").
+ 128.¿Qué reptil tiene cuerpo de franjas negro y naranja?
+ caracteristica(Reptil, "cuerpo_de_franjas_negro_y_naranja").
+ 129.¿Qué reptil tiene ojos en dos direcciones al mismo tiempo?
+ caracteristica(Reptil, "ojos_en_dos_direcciones_al_mismo_tiempo").
+ 130.¿Qué reptil tiene escamas negras con flecos dorados?
+ caracteristica(Reptil, "escamas_negras_con_flecos_dorados").
+ 131.¿Qué reptil tiene caparazón pintado de colores vivos?
+ caracteristica(Reptil, "caparazon_pintado_de_colores_vivos").
+ 132.¿Qué reptil tiene gran capacidad para cambiar de color?
+ caracteristica(Reptil, "gran_capacidad_para_cambiar_de_color").
+ 133.¿Qué reptil trepa árboles?
+ comportamiento(Reptil, "trepa_arboles").
+ 134.¿Qué reptil muerde con veneno?
+ comportamiento(Reptil, "muerde_con_veneno").
+ 135.¿Qué reptil caza en el agua?
+ comportamiento(Reptil, "caza_en_el_agua").
+ 136.¿Qué reptil acecha a sus presas?
+ comportamiento(Reptil, "acecha_presas").
+ 137.¿Qué reptil es nocturno?
+ actividad(Reptil, "nocturno").
+138.¿Qué reptil es diurno?
+ actividad(Reptil, "diurno").
+ 139.¿Qué reptil realiza ataques veloces como defensa?
+ defensa(Reptil, "ataques_veloces").
+ 140.¿Qué reptil utiliza la estrangulación como defensa?
+ defensa(Reptil, "estrangulacion").
+ 141.¿Qué reptil se desprende de la piel como defensa?
+ defensa(Reptil, "desprendimiento_de_la_piel").
+ 142.¿Qué reptil tiene cambio de color como defensa?
+ defensa(Reptil, "cambio_de_color").
+ 143.¿Qué reptil tiene escamas pegajosas y suaves?
+ piel(Reptil, "escamas_pegajosas_y_suaves").
+ 144.¿Qué reptil tiene escamas con patrón de mosaico?
+ piel(Reptil, "escamas_con_patron_de_mosaico").
+ 145¿Qué reptil tiene escamas verdes y lisas?
+ piel(Reptil, "escamas_verdes_y_lisas").
+ 146.¿Qué reptil dispara veneno a quienes se acercan?
+ defensa(Reptil, "dispara_veneno_a_quiens_se_acercan").
+ 147.¿Qué reptil se defiende con su cola?
+ defensa(Reptil, "se_defiende_con_su_cola").
+ 148.¿Qué reptil muerde para infectar a su presa?
+ defensa(Reptil, "bites_to_infect_prey").
+ 149.¿Qué reptil golpea con la boca para defenderse?
+ defensa(Reptil, "golpea_con_boca_para_defenderse").
+ 150.¿Qué reptil posee sentidos auditivos desarrollados?
+ adaptacionambiental(Reptil, "sentidos_auditivos", _).
+ 151.¿Qué reptil tolera el frío en bosques húmedos?
+ adaptacionambiental(Reptil, "tolerancia_al_frio", "bosque_humedo").
+ 152¿Qué reptil posee veneno para defensa en terrenos secos?
+ adaptacionambiental(Reptil, "veneno_para_defensa", "terrenos_secos").
+ 156.¿Qué reptil vive en la selva yanomami?
+ vive_en(Reptil, "selva_yanomami", _, _).
+ 157.¿Qué reptil vive en los altos del Tíbet?
+ vive_en(Reptil, "altos_del_tibet", _, _).
+ 158.¿Qué reptil pone huevos pequeños en praderas abiertas?
+ ciclo_reproductivo(Reptil, "oviparo", "praderas_abiertas", _, _, "huevos_pequenos").
+ 159.¿Qué reptil pone huevos ocultos en junglas de niebla?
+ ciclo_reproductivo(Reptil, "oviparo", "junglas_de_niebla", _, _, "nido_oculto").
+160.¿Qué reptil ovíparo pone huevos en desiertos cálidos?
+ ciclo_reproductivo(Reptil, "oviparo", "desiertos_calidos", _, _, _).
+ 161.¿Qué reptil interactúa en la sierra susurrante?
+ interactua_con(Reptil, "sierra_susurrante", _, _, _).
+ 162.¿Qué reptil pone huevos en agua fresca?
+ ciclo_reproductivo(Reptil, "ovoviviparo", "agua_fresca", _, _, _).
+ 163.¿Qué reptil pone huevos en lianas?
+ ciclo_reproductivo(Reptil, _, _, _, _, "nido_en_lianas").
+ 164.¿Qué reptil vive en el monte gris?
+ vive_en(Reptil, "monte_gris", _, _).
+ 165.¿Qué reptil vive en los cañones del Cáucaso?
+ vive_en(Reptil, "canones_caucaso", _, _).
+ 166.¿Qué reptil interactúa en el bosque de vientos?
+ interactua_con(Reptil, "bosque_de_vientos", _, _, _).
+ 167.¿Qué reptil come peces pequeños?
+ alimentacion(Reptil, "pequenos_peces").
+ 168.¿Qué reptil come monos?
+ alimentacion(Reptil, "monos").
+ 169.¿Qué reptil come caracoles?
+ alimentacion(Reptil, "caracoles").
+ 170.¿Qué reptil come larvas?
+ alimentacion(Reptil, "larvas").
+ 171.¿Qué reptil come frutas?
+ alimentacion(Reptil, "frutas").
+ 172.¿Qué reptil se alimenta de saltamontes?
+ alimentacion(Reptil, "saltamontes").
+ 173.¿Qué reptil se alimenta de invertebrados?
+ alimentacion(Reptil, "invertebrados").
+ 174.¿Qué reptil se alimenta de algas?
+ alimentacion(Reptil, "algas").
+ 175.¿Qué reptil se alimenta de pequeños reptiles?
+ alimentacion(Reptil, "pequenos_reptiles").
+ 176¿Qué reptil se alimenta de libélulas?
+ alimentacion(Reptil, "libelulas").
+ 178.¿Qué reptil tiene una escapatoria rápida en rocas calientes?
+ adaptacionambiental(Reptil, "escapatoria_rapida", "rocas_calientes").
+ 179¿Qué reptil tolera el frío en bosques húmedos?
+ adaptacionambiental(Reptil, "tolerancia_al_frio", "bosque_humedo").
+180.¿Qué reptil vive en zonas rocosas con temperaturas moderadas?
+ adaptacionambiental(Reptil, "temperaturas_moderadas", "zonas_rocosas").
