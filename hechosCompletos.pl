@@ -1,3 +1,4 @@
+ :- discontiguous reproduccion/3.
 un_reptil_venenoso("serpiente_de_corales").
 un_reptil_venenoso("serpiente_de_cascabel").
 un_reptil_venenoso("mamba_negra").
@@ -249,6 +250,12 @@ reptil("caiman_negro","nocturno").
 reptil("boa_de_arena","enterrada").
 reptil("serpiente_voladora","planea_entre_arboles").
 reptil("tortuga_lora","caparazon_semi_circular").
+habitat("culebra_neblinosa", "selva").
+habitat("iguana_verde", "selva").
+habitat("gecko_tokay", "selva").
+habitat("boa_constrictora", "selva").
+habitat("tortuga_carey", "selva").
+habitat("serpiente_cascabel", "desierto").
 habitat(reptil_herbivoro_solitario_pantano, "pantano").
 habitat(reptil_oviparo_migrador, "montaña").
 habitat(reptil_solitario_ovoviviparo_selva, "selva").
@@ -722,7 +729,11 @@ vive_en("serpentina_escamosa", "punta_makira", "mono_titi", "aura").
 vive_en("gecko_petrificado", "isla_de_piedra", "coati_serrano", "tinte").
 vive_en("lagartija_de_cabuya", "oasis_oculto", "tarsio_de_mara", "silencio").
 vive_en("tortuga_ceniza", "peninsula_mistica", "pekari_de_noche", "calma").
-
+interactua_con("culebra_neblinosa", "selva_circular", _, _, _).
+interactua_con("iguana_verde", "selva_circular", _, _, _).
+interactua_con("gecko_tokay", "selva_circular", _, _, _).
+interactua_con("boa_constrictora", "selva_circular", _, _, _).
+interactua_con("tortuga_carey", "selva_circular", _, _, _).
 interactua_con("piton_albinos", "llanura_escarchada", "zorro_del_desierto", "alba_roja", "nectar").
 interactua_con("iguana_purpura", "bosque_suspendido", "buho_ecuatorial", "brisa_nocturna", "ceniza").
 interactua_con("culebra_neblinosa", "selva_circular", "lobo_pintado", "sol_abisal", "espuma").
@@ -1866,6 +1877,10 @@ reproduccion("tortuga_de_la_isla_pinta", "oviparo").
 reproduccion("camaleon_pantera", "oviparo").
 reproduccion("serpiente_cascabel", "oviparo").
 reproduccion("cocodrilo_de_nilo", "oviparo").
+reproduccion("culebra_neblinosa", "oviparo", _).
+reproduccion("iguana_verde", "oviparo", _).
+reproduccion("tortuga_carey", "oviparo", _).
+reproduccion("serpiente_cascabel", "oviparo", _).
 reproduccion("camaleon_rosa", "oviparo").
 reproduccion("tortuga_de_herradura", "oviparo").
 reproduccion("serpiente_piton_boa", "oviparo").

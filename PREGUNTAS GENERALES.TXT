@@ -1,0 +1,267 @@
+Preguntas Generales del Proyecto Final
+ 1. ¿Qué reptiles son venenosos? → un_reptil_venenoso(X).
+ 2. ¿Qué reptiles son rápidos? → un_reptil_rapido(X).
+ 3. ¿Qué reptiles viven en ambientes acuáticos? → un_reptil_acuatico(X).
+ 4. ¿Qué reptiles presentan comportamiento solitario? → socializacion(X, "solitaria").
+ 5. ¿Qué reptiles tienen alimentación herbívora? → alimentacion(X, "herbivoro").
+ 6. ¿Qué reptiles tienen comportamiento agresivo? → temperamento(X, "agresivo").
+ 7. ¿Qué reptiles presentan camuflaje como defensa? → defensa(X, "camuflaje").
+ 8. ¿Qué reptiles son ovíparos? → reproduccion(X, "oviparo").
+ 9. ¿Qué reptiles tienen piel escamosa? → piel(X, "escamosa").
+ 10. ¿Qué reptiles viven en la selva? → habitat(X, "selva").
+ 11. ¿Qué reptiles tienen una vida mayor a 20 años? → ciclo_vida(X, Y), Y > 20.
+ 12. ¿Qué reptiles son nocturnos? → actividad(X, "nocturno").
+ 13. ¿Qué reptiles tienen veneno tóxico? → toxicidad(X, "toxico").
+ 14. ¿Qué reptiles pueden encontrarse en el desierto? → habitat(X, "desierto").
+ 15. ¿Qué reptiles tienen mandíbulas fuertes? → defensa(X, "mandíbulas_fuertes").
+ 16. ¿Qué reptiles son omnívoros? → alimentacion(X, "omnivoro").
+ 17. ¿Qué reptiles tienen comportamiento diurno? → actividad(X, "diurno").
+ 18. ¿Qué reptiles migran durante el año? → migracion(X, Y), Y = "no_migratoria".
+ 19. ¿Qué reptiles tienen escamas de colores brillantes? → piel(X, Y), sub_string(Y, _, _, _, "brill").
+ 20. ¿Qué reptiles viven en el pantano? → habitat(X, "pantano").
+ 21. ¿Qué reptiles tienen defensa basada en veneno? → defensa(X, Y), sub_string(Y, _, _, _, "veneno").
+ 22. ¿Qué reptiles presentan reproducción ovovivípara? → reproduccion(X, "ovoviviparo").
+ 23. ¿Qué reptiles tienen comportamiento gregario? → socializacion(X, "gregaria").
+ 24. ¿Qué reptiles tienen alimentación insectívora? → alimentacion(X, "insectivoro").
+ 25. ¿Qué reptiles pueden encontrarse en la montaña? → habitat(X, "montaña").
+ 26. ¿Qué reptiles tienen caparazón grande? → caracteristica(X, "caparazon_grande").
+ 27. ¿Qué reptiles presentan camuflaje en la piel? → piel(X, Y), sub_string(Y, _, _, _, "camuflaje").
+ 28. ¿Qué reptiles viven en islas? → habitat(X, "isla").
+ 29. ¿Qué reptiles tienen temperamento tranquilo? → temperamento(X, "tranquilo").
+ 30. ¿Qué reptiles tienen defensa basada en caparazón? → defensa(X, Y), sub_string(Y, _, _, _, "caparazon").
+ 31. ¿Qué reptiles tienen escamas verdes? → piel(X, Y), sub_string(Y, _, _, _, "verde").
+ 32. ¿Qué reptiles viven en ríos? → habitat(X, "río").
+ 33. ¿Qué reptiles tienen comportamiento defensivo? → comportamiento(X, "defensiva").
+ 34. ¿Qué reptiles tienen alimentación carnívora? → alimentacion(X, "carnivoro").
+ 35. ¿Qué reptiles presentan migración estacional? → migracion(X, Y), sub_string(Y, _, _, _, "estacional").
+ 36. ¿Qué reptiles tienen ciclo de vida menor a 10 años? → ciclo_vida(X, Y), Y < 10.
+ 37. ¿Qué reptiles viven en bosques? → habitat(X, "bosque").
+ 38. ¿Qué reptiles tienen escamas negras? → piel(X, Y), sub_string(Y, _, _, _, "negra").
+ 39. ¿Qué reptiles presentan defensa mediante camuflaje eficaz? → defensa(X, "camuflaje_eficaz").
+ 40. ¿Qué reptiles tienen comportamiento territorial? → socializacion(X, "territorial").
+ 41. ¿Qué reptiles tienen alimentación frugívora? → alimentacion(X, "frugivoro").
+ 42. ¿Qué reptiles viven en océanos? → habitat(X, "oceano").
+ 43. ¿Qué reptiles tienen defensa basada en mordedura? → defensa(X, Y), sub_string(Y, _, _, _, "mordedura").
+ 44. ¿Qué reptiles tienen escamas gruesas? → piel(X, Y), sub_string(Y, _, _, _, "gruesa").
+ 45. ¿Qué reptiles presentan actividad tanto diurna como nocturna? → actividad(X, "diurno"), actividad(X, "nocturno").
+ 46. ¿Qué reptiles tienen defensa basada en cambio de color? → defensa(X, Y), sub_string(Y, _, _, _, "cambio_de_color").
+ 47. ¿Qué reptiles viven en praderas? → habitat(X, "pradera").
+ 48. ¿Qué reptiles tienen ciclo de vida igual o mayor a 50 años? → ciclo_vida(X, Y), Y >= 50.
+ 49. ¿Qué reptiles presentan defensa mediante escape rápido? → defensa(X, Y), sub_string(Y, _, _, _, "escap").
+ 50. ¿Qué reptiles pueden encontrarse en la sabana? → habitat(X, "sabana").
+ 51. ¿Qué reptiles tienen adaptaciones para nadar? → adaptacionambiental(X, Y, Z), sub_string(Y, _, _, _, "nadar").
+ 52. ¿Qué reptiles presentan migración bidireccional? → migracion(X, "bidireccional", _).
+ 53. ¿Qué reptiles poseen visión nocturna? → adaptacionambiental(X, "vision_nocturna", _).
+ 54. ¿Qué reptiles viven en manglares? → habitat(X, "manglares").
+ 55. ¿Qué reptiles tienen caparazón blando? → caracteristica(X, "caparazon_blando").
+ 56. ¿Qué reptiles pueden encontrarse en playas? → habitat(X, "playa").
+ 57. ¿Qué reptiles presentan camuflaje en la arena? → adaptacionambiental(X, Y, Z), sub_string(Y, _, _, _, "arena").
+ 58. ¿Qué reptiles tienen escamas duras? → adaptacionambiental(X, "escamas_duras", _).
+ 59. ¿Qué reptiles viven en zonas volcánicas? → habitat(X, "volcán").
+ 60. ¿Qué reptiles presentan migración anual? → migracion(X, "anual", _).
+ 61. ¿Qué reptiles tienen defensa basada en sonido? → adaptacionambiental(X, Y, _), sub_string(Y, _, _, _, "sonido").
+ 62. ¿Qué reptiles pueden encontrarse en islas tropicales? → adaptacionambiental(X, _, "islas_tropicales").
+ 63. ¿Qué reptiles viven en cuevas? → habitat(X, "cueva").
+ Preguntas Generales V2 página 1   
+63. ¿Qué reptiles viven en cuevas? → habitat(X, "cueva").
+ 64. ¿Qué reptiles presentan tolerancia a bajas temperaturas? → adaptacionambiental(X, Y, _), sub_string(Y, _, _, _, "bajas_temperaturas").
+ 65. ¿Qué reptiles tienen mandíbulas pequeñas? → adaptacionambiental(X, "mandibulas_pequenas", _).
+ 66. ¿Qué reptiles pueden encontrarse en ríos caudalosos? → adaptacionambiental(X, _, "rios_rapidos").
+ 67. ¿Qué reptiles presentan camuflaje nocturno? → adaptacionambiental(X, "camuflaje_nocturno", _).
+ 68. ¿Qué reptiles viven en bosques húmedos? → adaptacionambiental(X, _, "bosques_humedos").
+ 69. ¿Qué reptiles presentan respiración subacuática? → adaptacionambiental(X, "respiracion_subacuatica", _).
+ 70. ¿Qué reptiles pueden encontrarse en zonas áridas? → adaptacionambiental(X, _, "zonas_aridas").
+ 71. ¿Qué reptiles presentan tolerancia a cambios de temperatura? → adaptacionambiental(X, Y, _), sub_string(Y, _, _, _, "cambios_de_temperatura").
+ 72. ¿Qué reptiles viven en lagunas? → habitat(X, "laguna").
+ 73. ¿Qué reptiles presentan camuflaje con hojas secas? → adaptacionambiental(X, "camuflaje_con_hojas_secas", _).
+ 74. ¿Qué reptiles pueden encontrarse en zonas pantanosas? → adaptacionambiental(X, _, "zonas_pantanosas").
+ 75. ¿Qué reptiles presentan defensa mediante expulsión de sangre? → defensa(X, "expulsa_sangre").
+ 76. ¿Qué reptiles viven en zonas rocosas? → adaptacionambiental(X, _, "zonas_rocosas").
+ 77. ¿Qué reptiles presentan veneno neurotóxico? → adaptacionambiental(X, "veneno_neurotoxico", _).
+ 78. ¿Qué reptiles pueden encontrarse en bosques secos? → habitat(X, "bosque_seco").
+ 79. ¿Qué reptiles presentan defensa mediante vibraciones? → adaptacionambiental(X, Y, _), sub_string(Y, _, _, _, "vibracion").
+ 80. ¿Qué reptiles viven en océanos cálidos? → habitat(X, "mar_caribe").
+ 81. ¿Qué reptiles presentan camuflaje en el suelo? → adaptacionambiental(X, "camuflaje_en_el_suelo", _).
+ 82. ¿Qué reptiles pueden encontrarse en estuarios? → habitat(X, "estuarios").
+ 83. ¿Qué reptiles presentan defensa mediante cambio de color rápido? → adaptacionambiental(X, "cambio_de_color_rapido", _).
+ 84. ¿Qué reptiles viven en zonas húmedas? → adaptacionambiental(X, _, "bosques_humedos").
+ 85. ¿Qué reptiles presentan defensa mediante camuflaje en la arena? → adaptacionambiental(X, "camuflaje_en_la_arena", _).
+ 86. ¿Qué reptiles pueden encontrarse en zonas frías? → adaptacionambiental(X, _, "areas_frias").
+ 87. ¿Qué reptiles presentan defensa mediante veneno mortal? → adaptacionambiental(X, "veneno_mortal", _).
+ 88. ¿Qué reptiles viven en zonas de sombra? → adaptacionambiental(X, _, "sombra_de_arboles").
+ 89. ¿Qué reptiles presentan defensa mediante camuflaje eficaz? → adaptacionambiental(X, "camuflaje_eficaz", _).
+ 90. ¿Qué reptiles pueden encontrarse en zonas de agua dulce? → adaptacionambiental(X, _, "agua_dulce").
+ 91. ¿Qué reptiles presentan defensa mediante veneno para defensa? → adaptacionambiental(X, "veneno_para_defensa", _).
+ 92. ¿Qué reptiles viven en zonas de agua salada? → adaptacionambiental(X, _, "agua_salada").
+ 93. ¿Qué reptiles presentan defensa mediante camuflaje con hojas secas? → adaptacionambiental(X, "camuflaje_con_hojas_secas", _).
+ 94. ¿Qué reptiles pueden encontrarse en zonas de rocas calientes? → adaptacionambiental(X, _, "rocas_calientes").
+ 95. ¿Qué reptiles presentan defensa mediante camuflaje en la arena? → adaptacionambiental(X, "camuflaje_en_la_arena", _).
+ 96. ¿Qué reptiles viven en zonas de árboles verdes? → adaptacionambiental(X, _, "arboles_verdes").
+ 97. ¿Qué reptiles presentan defensa mediante camuflaje nocturno? → adaptacionambiental(X, "camuflaje_nocturno", _).
+ 98. ¿Qué reptiles pueden encontrarse en zonas de mar abierto? → adaptacionambiental(X, _, "mar_abierto").
+ 99. ¿Qué reptiles presentan defensa mediante camuflaje en el suelo? → adaptacionambiental(X, "camuflaje_en_el_suelo", _).
+ 100. ¿Qué reptiles pueden encontrarse en la selva? → habitat(X, "selva").
+ 101. ¿Qué reptiles viven en el desierto? → habitat(X, "desierto").
+ 102. ¿Qué reptiles habitan en el pantano? → habitat(X, "pantano").
+ 103. ¿Qué reptiles se encuentran en la montaña? → habitat(X, "montaña").
+ 104. ¿Qué reptiles viven en islas? → habitat(X, "isla").
+ 105. ¿Qué reptiles pueden encontrarse en ríos? → habitat(X, "río").
+ 106. ¿Qué reptiles viven en el océano? → habitat(X, "oceano").
+ 107. ¿Qué reptiles se encuentran en la sabana? → habitat(X, "sabana").
+ 108. ¿Qué reptiles habitan en bosques? → habitat(X, "bosque").
+ 109. ¿Qué reptiles viven en praderas? → habitat(X, "pradera").
+ 110. ¿Qué reptiles se encuentran en playas? → habitat(X, "playa").
+ 111. ¿Qué reptiles viven en ambientes húmedos? → habitat(X, "humedo").
+ 112. ¿Qué reptiles pueden encontrarse en ambientes áridos? → habitat(X, "arido").
+ 113. ¿Qué reptiles viven en ambientes calurosos? → habitat(X, "caluroso").
+ 114. ¿Qué reptiles habitan en ambientes fríos? → habitat(X, "frio").
+ 115. ¿Qué reptiles se encuentran en ambientes salinos? → habitat(X, "salino").
+ 116. ¿Qué reptiles viven en ambientes fangosos? → habitat(X, "fangoso").
+ 117. ¿Qué reptiles pueden encontrarse en ambientes rocosos? → habitat(X, "rocoso").
+ 118. ¿Qué reptiles viven en ambientes volcánicos? → habitat(X, "volcanica").
+ 119. ¿Qué reptiles se encuentran en ambientes nublados? → habitat(X, "nebuloso").
+ 120. ¿Qué reptiles viven en ambientes extensos? → habitat(X, "extensa").
+ 121. ¿Qué reptiles pueden encontrarse en ambientes elevados? → habitat(X, "elevados").
+ 122. ¿Qué reptiles viven en ambientes caudalosos? → habitat(X, "caudaloso").
+ 123. ¿Qué reptiles se encuentran en ambientes cristalinos? → habitat(X, "cristalina").
+ 124. ¿Qué reptiles viven en ambientes antiguos? → habitat(X, "antiguo").
+ 125. ¿Qué reptiles pueden encontrarse en ambientes misteriosos? → habitat(X, "misterioso").
+ 126. ¿Qué reptiles viven en ambientes paradisíacos? → habitat(X, "paradisiaca").
+ 127. ¿Qué reptiles se encuentran en ambientes espectaculares? → habitat(X, "espectacular").
+ 128. ¿Qué reptiles viven en ambientes coloridos? → habitat(X, "colorida").
+ 129. ¿Qué reptiles pueden encontrarse en ambientes biodiversos? → habitat(X, "biodiversa").
+ Preguntas Generales V2 página 2   
+129. ¿Qué reptiles pueden encontrarse en ambientes biodiversos? → habitat(X, "biodiversa").
+ 130. ¿Qué reptiles viven en ambientes exuberantes? → habitat(X, "exuberante").
+ 131. ¿Qué reptiles se encuentran en ambientes aislados? → habitat(X, "aislada").
+ 132. ¿Qué reptiles viven en ambientes herbáceos? → habitat(X, "herbacea").
+ 133. ¿Qué reptiles pueden encontrarse en ambientes limosos? → habitat(X, "limoso").
+ 134. ¿Qué reptiles viven en ambientes ventosos? → habitat(X, "ventoso").
+ 135. ¿Qué reptiles se encuentran en ambientes nevados? → habitat(X, "nevadas").
+ 136. ¿Qué reptiles viven en ambientes de hoja caduca? → habitat(X, "de_hoja_caduca").
+ 137. ¿Qué reptiles pueden encontrarse en ambientes coníferos? → habitat(X, "conifero").
+ 138. ¿Qué reptiles viven en ambientes de agua dulce? → habitat(X, "aguas_dulces").
+ 139. ¿Qué reptiles se encuentran en ambientes de agua salada? → habitat(X, "agua_salada").
+ 140. ¿Qué reptiles viven en ambientes de montaña helada? → habitat(X, "helado").
+ 141. ¿Qué reptiles pueden encontrarse en ambientes de mar tropical? → habitat(X, "tropical").
+ 142. ¿Qué reptiles viven en ambientes de mar cálido? → habitat(X, "calido").
+ 143. ¿Qué reptiles se encuentran en ambientes de mar abismal? → habitat(X, "abismal").
+ 144. ¿Qué reptiles viven en ambientes de mar rojo? → habitat(X, "mar_rojo").
+ 145. ¿Qué reptiles pueden encontrarse en ambientes de mar negro? → habitat(X, "mar_negro").
+ 146. ¿Qué reptiles viven en ambientes de mar caribe? → habitat(X, "mar_caribe").
+ 147. ¿Qué reptiles se encuentran en ambientes de laguna sulfurosa? → habitat(X, "sulfurosa").
+ 148. ¿Qué reptiles viven en ambientes de laguna verde? → habitat(X, "laguna_verde").
+ 149. ¿Qué reptiles pueden encontrarse en ambientes de delta ancho? → habitat(X, "ancho").
+ 150. ¿Qué reptiles tienen caparazón duro? → caracteristica(X, "caparazon_duro").
+ 151. ¿Qué reptiles tienen caparazón grande? → caracteristica(X, "caparazon_grande").
+ 152. ¿Qué reptiles tienen caparazón resistente? → defensa(X, "caparazon_resistente").
+ 153. ¿Qué reptiles presentan camuflaje eficaz? → defensa(X, "camuflaje_eficaz").
+ 154. ¿Qué reptiles tienen veneno tóxico? → defensa(X, "veneno_toxico").
+ 155. ¿Qué reptiles tienen mandíbulas fuertes? → defensa(X, "mandíbulas_fuertes").
+ 156. ¿Qué reptiles tienen escamas brillantes? → piel(X, Y), sub_atom(Y, _, _, _, "brill").
+ 157. ¿Qué reptiles tienen piel negra? → piel(X, "piel_negra").
+ 158. ¿Qué reptiles tienen escamas gruesas? → piel(X, Y), sub_atom(Y, _, _, _, "gruesa").
+ 159. ¿Qué reptiles tienen escamas verdes? → piel(X, Y), sub_atom(Y, _, _, _, "verde").
+ 160. ¿Qué reptiles tienen escamas rojas? → piel(X, Y), sub_atom(Y, _, _, _, "roja").
+ 161. ¿Qué reptiles tienen escamas negras? → piel(X, Y), sub_atom(Y, _, _, _, "negra").
+ 162. ¿Qué reptiles tienen escamas duras? → piel(X, Y), sub_atom(Y, _, _, _, "dura").
+ 163. ¿Qué reptiles tienen escamas suaves? → piel(X, Y), sub_atom(Y, _, _, _, "suave").
+ 164. ¿Qué reptiles tienen escamas grandes? → piel(X, Y), sub_atom(Y, _, _, _, "grande").
+ 165. ¿Qué reptiles tienen escamas amarillas? → piel(X, Y), sub_atom(Y, _, _, _, "amarilla").
+ 166. ¿Qué reptiles tienen escamas pegajosas? → piel(X, Y), sub_atom(Y, _, _, _, "pegajosa").
+ 167. ¿Qué reptiles tienen caparazón ovalado? → piel(X, Y), sub_atom(Y, _, _, _, "ovalado").
+ 168. ¿Qué reptiles tienen caparazón puntiagudo? → piel(X, Y), sub_atom(Y, _, _, _, "puntiagudo").
+ 169. ¿Qué reptiles tienen caparazón plano? → piel(X, Y), sub_atom(Y, _, _, _, "plano").
+ 170. ¿Qué reptiles tienen caparazón amarillo? → piel(X, Y), sub_atom(Y, _, _, _, "amarillo").
+ 171. ¿Qué reptiles tienen caparazón rugoso? → piel(X, Y), sub_atom(Y, _, _, _, "rugoso").
+ 172. ¿Qué reptiles tienen caparazón flexible? → caracteristica(X, Y), sub_atom(Y, _, _, _, "flexible").
+ 173. ¿Qué reptiles tienen defensa de camuflaje? → defensa(X, Y), sub_atom(Y, _, _, _, "camuflaje").
+ 174. ¿Qué reptiles tienen defensa de mimetismo? → defensa(X, Y), sub_atom(Y, _, _, _, "mimetismo").
+ 175. ¿Qué reptiles tienen defensa de mordedura? → defensa(X, Y), sub_atom(Y, _, _, _, "mordedura").
+ 176. ¿Qué reptiles tienen defensa de estrangulación? → defensa(X, Y), sub_atom(Y, _, _, _, "estrangul").
+ 177. ¿Qué reptiles tienen defensa de veneno potente? → defensa(X, Y), sub_atom(Y, _, _, _, "veneno").
+ 178. ¿Qué reptiles tienen defensa de cambio de color? → defensa(X, Y), sub_atom(Y, _, _, _, "cambio_de_color").
+ 179. ¿Qué reptiles tienen defensa de esconderse? → defensa(X, Y), sub_atom(Y, _, _, _, "esconde").
+ 180. ¿Qué reptiles tienen defensa de escape rápido? → defensa(X, Y), sub_atom(Y, _, _, _, "escap").
+ 181. ¿Qué reptiles tienen defensa de camuflaje en plantas? → defensa(X, Y), sub_atom(Y, _, _, _, "plantas").
+ 182. ¿Qué reptiles tienen defensa de camuflaje en agua? → defensa(X, Y), sub_atom(Y, _, _, _, "agua").
+ 183. ¿Qué reptiles tienen defensa de camuflaje en arena? → defensa(X, Y), sub_atom(Y, _, _, _, "arena").
+ 184. ¿Qué reptiles tienen defensa de camuflaje en rocas? → defensa(X, Y), sub_atom(Y, _, _, _, "roca").
+ 185. ¿Qué reptiles tienen defensa de camuflaje en hojas? → defensa(X, Y), sub_atom(Y, _, _, _, "hoja").
+ 186. ¿Qué reptiles tienen defensa de camuflaje en fango? → defensa(X, Y), sub_atom(Y, _, _, _, "fango").
+ 187. ¿Qué reptiles tienen defensa de camuflaje en sombra? → defensa(X, Y), sub_atom(Y, _, _, _, "sombra").
+ 188. ¿Qué reptiles tienen defensa de camuflaje en troncos? → defensa(X, Y), sub_atom(Y, _, _, _, "tronco").
+ 189. ¿Qué reptiles tienen defensa de camuflaje en ramas? → defensa(X, Y), sub_atom(Y, _, _, _, "rama").
+ 190. ¿Qué reptiles tienen defensa de camuflaje en matorrales? → defensa(X, Y), sub_atom(Y, _, _, _, "matorral").
+ 191. ¿Qué reptiles tienen defensa de camuflaje en tierra? → defensa(X, Y), sub_atom(Y, _, _, _, "tierra").
+ 192. ¿Qué reptiles tienen defensa de camuflaje en piedras? → defensa(X, Y), sub_atom(Y, _, _, _, "piedra").
+ 193. ¿Qué reptiles tienen defensa de camuflaje en raíces? → defensa(X, Y), sub_atom(Y, _, _, _, "raiz").
+ 194. ¿Qué reptiles tienen defensa de camuflaje en lodo? → defensa(X, Y), sub_atom(Y, _, _, _, "lodo").
+ 195. ¿Qué reptiles tienen defensa de camuflaje en agua dulce? → defensa(X, Y), sub_atom(Y, _, _, _, "agua_dulce").
+ Preguntas Generales V2 página 3   
+195. ¿Qué reptiles tienen defensa de camuflaje en agua dulce? → defensa(X, Y), sub_atom(Y, _, _, _, "agua_dulce").
+ 196. ¿Qué reptiles tienen defensa de camuflaje en agua salada? → defensa(X, Y), sub_atom(Y, _, _, _, "agua_salada").
+ 197. ¿Qué reptiles tienen comportamiento solitario? → socializacion(X, "solitaria").
+ 198. ¿Qué reptiles presentan temperamento agresivo? → temperamento(X, "agresivo").
+ 199. ¿Qué reptiles son de temperamento tranquilo? → temperamento(X, "tranquilo").
+ 200. ¿Qué reptiles muestran comportamiento gregario? → socializacion(X, "gregaria").
+ 201. ¿Qué reptiles tienen defensa basada en camuflaje? → defensa(X, "camuflaje").
+ 202. ¿Qué reptiles poseen caparazón resistente? → defensa(X, "caparazon_resistente").
+ 203. ¿Qué reptiles tienen defensa de veneno tóxico? → defensa(X, "veneno_toxico").
+ 204. ¿Qué reptiles muestran defensa con mandíbulas poderosas? → defensa(X, "mandibulas_poderosas").
+ 205. ¿Qué reptiles se defienden con camuflaje eficaz? → defensa(X, "camuflaje_eficaz").
+ 206. ¿Qué reptiles tienen defensa de caparazón duro? → defensa(X, "caparazon_duro").
+ 207. ¿Qué reptiles presentan defensa de mordedura poderosa? → defensa(X, "mordedura_poderosa").
+ 208. ¿Qué reptiles se defienden con cambio de color? → defensa(X, "cambio_de_color").
+ 209. ¿Qué reptiles tienen piel escamosa? → piel(X, "escamosa").
+ 210. ¿Qué reptiles presentan escamas brillantes? → piel(X, "escamas_brillantes").
+ 211. ¿Qué reptiles poseen piel de camuflaje? → piel(X, "camuflaje").
+ 212. ¿Qué reptiles tienen piel negra? → piel(X, "piel_negra").
+ 213. ¿Qué reptiles presentan piel verde? → piel(X, "piel_verde").
+ 214. ¿Qué reptiles tienen escamas gruesas y rugosas? → piel(X, "escamas_gruesas_y_rugosas").
+ 215. ¿Qué reptiles muestran escamas suaves y brillantes? → piel(X, "escamas_suaves_y_brilantes").
+ 216. ¿Qué reptiles tienen escamas gruesas y protegidas? → piel(X, "escamas_gruesas_y_protegidas").
+ 217. ¿Qué reptiles presentan escamas espesas y resistentes? → piel(X, "escamas_espesas_y_resistentes").
+ 218. ¿Qué reptiles tienen escamas negras y relucientes? → piel(X, "escamas_negras_y_relucientes").
+ 219. ¿Qué reptiles poseen piel húmeda y escamosa? → piel(X, "piel_humeda_y_escamosa").
+ 220. ¿Qué reptiles presentan escamas tempranas y duras? → piel(X, "escamas_tempranas_y_duras").
+ 221. ¿Qué reptiles tienen escamas rojas y negras? → piel(X, "escamas_rojas_y_negras").
+ 222. ¿Qué reptiles muestran caparazón duro y flexible? → piel(X, "caparazon_duro_y_flexible").
+ 223. ¿Qué reptiles tienen escamas gruesas y texturizadas? → piel(X, "escamas_gruesas_y_texturizadas").
+ 224. ¿Qué reptiles presentan escamas que brillan en el sol? → piel(X, "escamas_que_brillan_en_el_sol").
+ 225. ¿Qué reptiles tienen escamas protegidas y agrupadas? → piel(X, "escamas_protegidas_y_agrupadas").
+ 226. ¿Qué reptiles muestran caparazón duro y gran color? → piel(X, "caparazon_duro_y_gran_color").
+ 227. ¿Qué reptiles poseen piel de colores cambiantes? → piel(X, "piel_de_colores_cambiantes").
+ 228. ¿Qué reptiles presentan escamas blandas y lisas? → piel(X, "escamas_blandas_y_lisas").
+ 229. ¿Qué reptiles tienen escamas gruesas y rugosas? → piel(X, "escamas_gruesas_y_rugosas").
+ 230. ¿Qué reptiles muestran piel verde con manchas de colores? → piel(X, "piel_verde_con_mancha_de_colores").
+ 231. ¿Qué reptiles presentan escamas ásperas y opacas? → piel(X, "escamas_ásperas_y_opaque").
+ 232. ¿Qué reptiles tienen escamas duras y largas? → piel(X, "escamas_duras_y_largas").
+ 233. ¿Qué reptiles muestran caparazón oscuro y duro? → piel(X, "caparazon_oscuro_y_duro").
+ 234. ¿Qué reptiles presentan escamas gruesas y amarillas? → piel(X, "escamas_gruesas_y_amarillas").
+ 235. ¿Qué reptiles tienen escamas que cambian con el ambiente? → piel(X, "escamas_que_cambian_con_el_ambiente").
+ 236. ¿Qué reptiles muestran caparazón ovalado y liso? → piel(X, "caparazon_ovalado_y_liso").
+ 237. ¿Qué reptiles presentan escamas verde oscuro y gruesas? → piel(X, "escamas_verde_oscuro_y_gruesas").
+ 238. ¿Qué reptiles tienen caparazón firme y de color amarillo? → piel(X, "caparazon_firme_y_de_color_amarillo").
+ 239. ¿Qué reptiles muestran escamas duraderas y amarillas? → piel(X, "escamas_duraderas_y_amarillas").
+ 240. ¿Qué reptiles presentan escamas rojas y negras? → piel(X, "escamas_rojas_y_negras").
+ 241. ¿Qué reptiles tienen caparazón amarillo y grande? → piel(X, "caparazon_amarillo_y_grande").
+ 242. ¿Qué reptiles muestran escamas diamante y colores que se adaptan? → piel(X, "escamas_diamante_y_colores_que_se_adaptan").
+ 243. ¿Qué reptiles presentan escamas verdes y pegajosas? → piel(X, "escamas_verdes_y_pegajosas").
+ 244. ¿Qué reptiles tienen escamas naranjas y grandes? → piel(X, "escamas_naranjas_y_grandes").
+ 245. ¿Qué reptiles muestran escamas marrón y gruesas? → piel(X, "escamas_gruesas_y_de_color_marrón").
+ 246. ¿Qué reptiles presentan caparazón rugoso y rectangular? → piel(X, "caparazon_rugoso_y_rectangular").
+ 247. ¿Qué reptiles tienen escamas duraderas y finas? → piel(X, "escamas_duraderas_y_finas").
+ 248. ¿Qué reptiles muestran caparazón resistente y ovalado? → piel(X, "caparazon_resistente_y_ovalado").
+ 249. ¿Qué reptiles presentan escamas duras y largas? → piel(X, "escamas_duras_y_largas").
+ 250. ¿Qué reptiles tienen escamas verde grisáceo? → piel(X, "escamas_verde_grisáceo").
+ 251. ¿Qué reptiles muestran escamas pequeñas y verde claro? → piel(X, "escamas_pequeñas_y_verde_claro").
+ 252. ¿Qué reptiles presentan escamas grandes y negras? → piel(X, "escamas_grandes_y_negras").
+ 253. ¿Qué reptiles tienen caparazón grande y verde? → piel(X, "caparazon_grande_y_verde").
+ 254. ¿Qué reptiles muestran escamas diminutas y colores que se camuflan? → piel(X, "escamas_diminutas_y_colores_que_se_camuflan").
+ 255. ¿Qué reptiles presentan escamas resistentes y verdes? → piel(X, "escamas_resistentes_y_verde").
+ 256. ¿Qué reptiles tienen caparazón duro y amarillo? → piel(X, "caparazon_duro_y_amarillo").
+ 257. ¿Qué reptiles muestran escamas verdes y lisas? → piel(X, "escamas_verdes_y_lisas").
+ 258. ¿Qué reptiles presentan caparazón punteado y duro? → piel(X, "caparazon_punteado_y_duro").
+ 259. ¿Qué reptiles tienen ciclo de vida de al menos 10 años? → ciclo_vida(X, Y), Y >= 10.
+ 260. ¿Qué reptiles presentan comportamiento diurno? → actividad(X, "diurno").
